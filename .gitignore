@@ -1,0 +1,9 @@
+# Ignore virtual environment
+menv/
+__pycache__/
+*.pyc
+
+# Ignore API keys and secret files
+.env
+config.env
+client_secret.json

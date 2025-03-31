@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health-Bodt AI Medical Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                    </svg>
+                    <h1>Health-Bodt</h1>
+                </div>
+                <div class="header-actions">
+                    <span class="ai-badge">AI Powered</span>
+                </div>
+            </div>
+        </div>
+    </header>
+<main class="main-content">
+        <div class="container">
+            <section class="hero-section">
+                <h2>AI Medical Assistant</h2>
+                <p class="subtitle">Get instant AI-powered health insights by describing your symptoms</p>
+            </section>
+	    <section class="query-section">
+                <div class="input-card">
+                    <div class="model-selection">
+                        <h3>Choose Analysis Engine</h3>
+                        <div class="model-buttons">
+                            <button class="model-btn active" data-model="GEMINI">
+                                <span class="model-icon">🔍</span>
+                                <span>Standard</span>
+                            </button>
+                            <button class="model-btn" data-model="MISTRAL">
+                                <span class="model-icon">⚡</span>
+                                <span>Advanced</span>
+                            </button>
+                            <button class="model-btn" data-model="LLAMA">
+                                <span class="model-icon">🎯</span>
+                                <span>Specialist</span>
+                            </button>
+                        </div>
+                </div>
+                    <div class="input-section">
+                        <div class="input-header">
+                            <h3>Describe Your Symptoms</h3>
+                            <button id="clear-btn" class="icon-btn">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/>
+                                </svg>
+                                Clear
+                            </button>
+                        </div>
+
+                        <div class="info-box">
+                            <p>Please include:</p>
+                            <ul>
+                                <li>When symptoms started</li>
+                                <li>Severity and frequency</li>
+                                <li>What makes it better/worse</li>
+                                <li>Related health conditions</li>
+                            </ul>
+                        </div>
+                        <textarea 
+                            id="symptoms-textarea"
+                            placeholder="Example: I've had a persistent headache for 2 days, concentrated in the front of my head. It gets worse when I look at screens..."
+                        ></textarea>
+                        <div class="input-footer">
+                            <span id="char-count">0 characters</span>
+                            <button id="submit-btn" class="primary-btn">
+                                Analyze Symptoms
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 12H3m15 0l-4-4m4 4l-4 4"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="output-card">
+                    <div class="output-header">
+                        <h3>...

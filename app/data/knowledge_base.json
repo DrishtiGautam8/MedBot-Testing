@@ -1,0 +1,297 @@
+{
+    "common_symptoms": {
+      "headache": [
+        "tension headache",
+        "migraine",
+        "cluster headache",
+        "sinus headache",
+        "medication overuse headache"
+      ],
+      "fever": [
+        "viral infection",
+        "bacterial infection",
+        "COVID-19",
+        "influenza",
+        "urinary tract infection"
+      ],
+      "cough": [
+        "common cold",
+        "bronchitis",
+        "pneumonia",
+        "asthma",
+        "COVID-19",
+        "allergies"
+      ],
+      "fatigue": [
+        "anemia",
+        "sleep apnea",
+        "depression",
+        "hypothyroidism",
+        "chronic fatigue syndrome",
+        "diabetes"
+      ],
+      "nausea": [
+        "gastroenteritis",
+        "food poisoning",
+        "migraine",
+        "morning sickness",
+        "motion sickness",
+        "medication side effect"
+      ],
+      "abdominal pain": [
+        "appendicitis",
+        "gastritis",
+        "irritable bowel syndrome",
+        "kidney stones",
+        "urinary tract infection",
+        "gastroesophageal reflux disease"
+      ],
+      "dizziness": [
+        "vertigo",
+        "inner ear infection",
+        "anemia",
+        "dehydration",
+        "hypoglycemia",
+        "anxiety"
+      ],
+      "chest pain": [
+        "angina",
+        "myocardial infarction",
+        "gastroesophageal reflux disease",
+        "costochondritis",
+        "anxiety",
+        "pulmonary embolism"
+      ],
+      "shortness of breath": [
+        "asthma",
+        "chronic obstructive pulmonary disease",
+        "pneumonia",
+        "heart failure",
+        "anxiety",
+        "COVID-19"
+      ],
+      "back pain": [
+        "muscle strain",
+        "herniated disc",
+        "sciatica",
+        "osteoarthritis",
+        "kidney infection",
+        "spinal stenosis"
+      ],
+      "joint pain": [
+        "osteoarthritis",
+        "rheumatoid arthritis",
+        "gout",
+        "lupus",
+        "fibromyalgia",
+        "bursitis"
+      ],
+      "rash": [
+        "eczema",
+        "psoriasis",
+        "contact dermatitis",
+        "hives",
+        "impetigo",
+        "shingles"
+      ],
+      "sore throat": [
+        "pharyngitis",
+        "tonsillitis",
+        "strep throat",
+        "common cold",
+        "flu",
+        "COVID-19"
+      ]
+    },
+    "common_conditions": {
+      "hypertension": {
+        "symptoms": ["headache", "dizziness", "chest pain", "shortness of breath"],
+        "risk_factors": ["family history", "obesity", "high salt diet", "sedentary lifestyle", "stress", "smoking", "alcohol consumption"],
+        "warning_signs": ["severe headache", "vision changes", "confusion", "nosebleeds", "severe anxiety"]
+      },
+      "diabetes": {
+        "symptoms": ["increased thirst", "frequent urination", "extreme hunger", "unexplained weight loss", "fatigue", "blurred vision"],
+        "risk_factors": ["family history", "obesity", "sedentary lifestyle", "high blood pressure", "age", "ethnicity"],
+        "warning_signs": ["fruity-smelling breath", "nausea and vomiting", "confusion", "abdominal pain", "loss of consciousness"]
+      },
+      "asthma": {
+        "symptoms": ["shortness of breath", "chest tightness", "wheezing", "coughing", "trouble sleeping"],
+        "triggers": ["allergens", "air pollution", "exercise", "cold air", "respiratory infections", "stress"],
+        "warning_signs": ["severe shortness of breath", "difficulty speaking", "blue lips or fingernails", "extreme anxiety", "rapid breathing"]
+      },
+      "migraine": {
+        "symptoms": ["throbbing headache", "nausea", "vomiting", "sensitivity to light", "sensitivity to sound", "visual disturbances"],
+        "triggers": ["stress", "certain foods", "alcohol", "hormonal changes", "lack of sleep", "bright lights"],
+        "warning_signs": ["aura", "changes in vision", "tingling in face or hands", "difficulty speaking"]
+      }
+    },
+    "medical_advice": {
+      "general": "This information is for educational purposes only. Always consult with a healthcare professional for proper medical diagnosis and treatment advice.",
+      "emergency_signs": [
+        "Difficulty breathing or shortness of breath",
+        "Persistent chest pain or pressure",
+        "New confusion or inability to arouse",
+        "Bluish lips or face",
+        "Severe and persistent abdominal pain",
+        "Sudden severe headache with no known cause",
+        "Sudden numbness or weakness in the face, arm, or leg, especially on one side of the body",
+        "High fever with severe headache and stiff neck"
+      ],
+      "preventive_care": [
+        "Schedule regular check-ups with your healthcare provider",
+        "Keep vaccines up to date",
+        "Maintain a healthy diet and exercise regularly",
+        "Get adequate sleep",
+        "Manage stress through healthy coping mechanisms",
+        "Avoid tobacco and limit alcohol consumption",
+        "Practice good hygiene to prevent infections"
+      ]
+    },
+    "medications": {
+      "common_side_effects": {
+        "antibiotics": ["diarrhea", "nausea", "rash", "yeast infections"],
+        "antidepressants": ["drowsiness", "dry mouth", "weight changes", "sexual dysfunction"],
+        "pain_relievers": ["stomach upset", "heartburn", "dizziness", "headache"],
+        "blood_pressure_medications": ["dizziness", "fatigue", "dry cough", "frequent urination"]
+      },
+      "general_advice": "Take medications as prescribed, do not stop without consulting your doctor, and inform your healthcare provider of any side effects.",
+      "categories": {
+        "pain_relievers": ["paracetamol", "ibuprofen", "aspirin"],
+        "antibiotics": ["amoxicillin", "azithromycin", "ciprofloxacin"],
+        "antihypertensives": ["amlodipine", "losartan", "enalapril"]
+      },
+      "general_guidelines": [
+        "take as prescribed",
+        "complete full course of antibiotics",
+        "store in cool, dry place",
+        "check expiration dates",
+        "report adverse effects"
+      ]
+    },
+    "first_aid": {
+      "minor_burns": [
+        "Cool the burn with cool (not cold) running water for 10-15 minutes",
+        "Apply aloe vera gel or moisturizer",
+        "Take over-the-counter pain relievers if needed",
+        "Cover with a sterile, non-stick bandage",
+        "Do not break blisters"
+      ],
+      "cuts_and_scrapes": [
+        "Wash your hands",
+        "Clean the wound with mild soap and water",
+        "Apply an antibiotic ointment",
+        "Cover with a clean bandage",
+        "Change the bandage daily"
+      ],
+      "sprains": [
+        "Rest the injured area",
+        "Apply ice for 15-20 minutes several times a day",
+        "Compress with an elastic bandage",
+        "Elevate the injured area above heart level when possible",
+        "Take over-the-counter pain relievers if needed"
+      ],
+      "burns": {
+        "steps": [
+          "cool under running water",
+          "cover with sterile dressing",
+          "pain relief if needed"
+        ],
+        "dont": [
+          "apply ice directly",
+          "burst blisters",
+          "use adhesive dressings"
+        ]
+      },
+      "cuts": {
+        "steps": [
+          "clean with soap and water",
+          "apply antiseptic",
+          "cover with sterile dressing"
+        ]
+      }
+    },
+    "india_specific": {
+      "common_conditions": ["tuberculosis", "malaria", "dengue fever", "typhoid", "hepatitis A", "chikungunya"],
+      "seasonal_diseases": {
+        "monsoon": ["malaria", "dengue", "leptospirosis", "cholera", "typhoid"],
+        "summer": ["heat stroke", "dehydration", "food poisoning", "chicken pox"],
+        "winter": ["influenza", "common cold", "pneumonia", "bronchitis"]
+      },
+      "regional_healthcare": {
+        "emergency_number": "108",
+        "national_helpline": "1800-180-1104",
+        "covid_helpline": "1075"
+      }
+    },
+    "conditions": {
+      "respiratory": {
+        "common_cold": {
+          "symptoms": ["runny nose", "sore throat", "cough", "congestion", "mild headache", "sneezing", "low-grade fever"],
+          "duration": "7-10 days",
+          "treatment": ["rest", "hydration", "over-the-counter cold medications"],
+          "when_to_seek_help": ["symptoms lasting >10 days", "high fever", "severe sinus pain", "difficulty breathing"]
+        },
+        "influenza": {
+          "symptoms": ["fever >100.4°F", "muscle aches", "chills", "headache", "dry cough", "fatigue", "nasal congestion"],
+          "duration": "5-7 days",
+          "treatment": ["antiviral medications", "rest", "hydration"],
+          "prevention": ["annual vaccination", "hand hygiene", "avoiding sick contacts"]
+        }
+      },
+      "cardiovascular": {
+        "hypertension": {
+          "symptoms": ["usually asymptomatic", "headaches", "nosebleeds", "shortness of breath"],
+          "risk_factors": ["obesity", "high sodium intake", "family history", "stress"],
+          "monitoring": {
+            "normal": "below 120/80 mmHg",
+            "elevated": "120-129/80 mmHg",
+            "high": "130/80 mmHg or higher"
+          }
+        },
+        "heart_attack": {
+          "warning_signs": [
+            "chest pain or pressure",
+            "pain in arms, back, neck, jaw",
+            "shortness of breath",
+            "cold sweat",
+            "nausea",
+            "lightheadedness"
+          ],
+          "immediate_actions": ["call emergency services", "chew aspirin if recommended", "rest in comfortable position"]
+        }
+      },
+      "neurological": {
+        "migraine": {
+          "symptoms": ["throbbing headache", "nausea", "light sensitivity", "sound sensitivity", "visual aura"],
+          "triggers": ["stress", "certain foods", "hormonal changes", "lack of sleep"],
+          "treatment": ["pain relievers", "triptans", "preventive medications"]
+        }
+      }
+    },
+    "emergency_symptoms": {
+      "seek_immediate_care": [
+        "difficulty breathing",
+        "chest pain",
+        "severe abdominal pain",
+        "sudden confusion",
+        "sudden severe headache",
+        "loss of consciousness",
+        "severe bleeding",
+        "stroke symptoms (FAST): facial drooping, arm weakness, speech difficulty, time to call emergency"
+      ]
+    },
+    "preventive_care": {
+      "routine_checkups": {
+        "frequency": "annual",
+        "includes": ["blood pressure", "cholesterol", "blood sugar", "body mass index", "vaccination review"]
+      },
+      "lifestyle_recommendations": [
+        "regular exercise (150 minutes/week)",
+        "balanced diet",
+        "adequate sleep (7-9 hours)",
+        "stress management",
+        "smoking cessation",
+        "limited alcohol intake"
+      ]
+    }
+  }
