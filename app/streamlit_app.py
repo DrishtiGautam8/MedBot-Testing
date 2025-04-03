@@ -1,5 +1,11 @@
 import streamlit as st
 import json
+import sys
+import importlib
+if "analysis_engine" in sys.modules:
+    importlib.reload(sys.modules["analysis_engine"])
+from analysis_engine import analyze_query
+
 from analysis_engine import analyze_query  # Importing the model function directly
 
 # Custom CSS Styling
