@@ -4,7 +4,9 @@ import sys
 import importlib
 if "analysis_engine" in sys.modules:
     importlib.reload(sys.modules["analysis_engine"])
-from analysis_engine import analyze_query
+
+import os
+os.system("pip uninstall pysqlite3-binary -y && pip install pysqlite3-binary")
 
 from analysis_engine import analyze_query  # Importing the model function directly
 
