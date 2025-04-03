@@ -8,9 +8,8 @@ if "analysis_engine" in sys.modules:
 import os
 
 # Upgrade SQLite before importing chromadb
-os.system("sudo apt-get update && sudo apt-get install sqlite3")
-
-from app.analysis_engine import analyze_query  # Import your main function
+os.system("apt-get update && apt-get install -y sqlite3")
+from analysis_engine import analyze_query  # Import your main function
 
 # from analysis_engine import analyze_query  # Importing the model function directly
 
