@@ -5,5 +5,5 @@ __pycache__/
 
 # Ignore API keys and secret files
 .env
-Create congif.env
+congif.env
 client_secret.json
