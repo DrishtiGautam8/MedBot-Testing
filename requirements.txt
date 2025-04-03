@@ -61,7 +61,7 @@ jsonpointer==2.4
 kubernetes==29.0.0
 langchain==0.1.16
 langchain-chroma
-langchain-pypdf
+
 langchain-community==0.0.34
 langchain-core==0.1.46
 langchain-google-genai==0.0.2
