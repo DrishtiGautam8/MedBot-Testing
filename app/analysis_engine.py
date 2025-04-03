@@ -4,7 +4,7 @@ import chromadb
 from groq import Groq
 from google.generativeai import GenerativeModel
 from dotenv import load_dotenv
-from sentence_transformers import SentenceTransformer  # ✅ Load embedding model
+from sentence_transformers import SentenceTransformer  #  Load embedding model
 
 # Load environment variables
 load_dotenv()
@@ -27,11 +27,11 @@ class AnalysisEngine:
         
         self.model = AVAILABLE_MODELS[model_name]
         
-        # ✅ Load ChromaDB Client
+        # Load ChromaDB Client
         self.chroma_client = chromadb.PersistentClient(path="./medical_db")
         self.medical_collection = self.chroma_client.get_or_create_collection("medical_knowledge")
 
-        # ✅ Load SentenceTransformer for embeddings
+        # Load SentenceTransformer for embeddings
         self.embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
 
         if model_name == "GEMINI":
@@ -41,13 +41,13 @@ class AnalysisEngine:
         else:
             self.client = Groq(api_key=GROQ_API_KEY)
 
-        print(f"✅ RAG Engine initialized with '{model_name}' and ChromaDB")
+        print(f"RAG Engine initialized with '{model_name}' and ChromaDB")
 
     def search_medical_knowledge(self, query):
         """Finds relevant medical information using **vector search**"""
         query_embedding = self.embedding_model.encode(query).tolist()
 
-        # 🔎 Perform similarity search in ChromaDB
+        #  Perform similarity search in ChromaDB
         results = self.medical_collection.query(
             query_embeddings=[query_embedding],
             n_results=3  # Retrieve top 3 matches
@@ -61,7 +61,7 @@ class AnalysisEngine:
 
     def generate_response(self, prompt):
         try:
-            relevant_info = self.search_medical_knowledge(prompt)  # ✅ Uses ChromaDB
+            relevant_info = self.search_medical_knowledge(prompt)  #  Uses ChromaDB
             relevant_text = "\n".join(relevant_info)
 
             formatted_prompt = f"""
@@ -79,7 +79,7 @@ class AnalysisEngine:
             Please keep your response concise and structured.
             """
 
-            print(f"\n🔎 Generating response using {self.model} with RAG and Vector Search...\n")
+            print(f"\n Generating response using {self.model} with RAG and Vector Search...\n")
             if self.model == "gemini-2.0-pro-exp-02-05":
                 response = self.client.generate_content(formatted_prompt)
                 return response.text
@@ -90,7 +90,7 @@ class AnalysisEngine:
                 )
                 return response.choices[0].message.content
         except Exception as e:
-            print(f"❌ Error generating response: {str(e)}")
+            print(f" Error generating response: {str(e)}")
         return None
 
 
