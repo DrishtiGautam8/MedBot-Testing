@@ -46,7 +46,7 @@ httplib2==0.22.0
 httptools==0.6.1
 httpx==0.28.1
 httpx-sse==0.4.0
-huggingface-hub==0.22.2
+huggingface-hub==0.24.4
 humanfriendly==10.0
 idna==3.7
 importlib-metadata==7.0.0
