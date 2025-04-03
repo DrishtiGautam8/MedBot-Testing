@@ -42,7 +42,7 @@ if "responses" not in st.session_state:
     st.session_state.responses = []
 
 # Title
-st.title("🔍 Healthy-Bot")
+st.title("MedBot-Testing")
 
 # Model Selection
 model_name = st.selectbox("Choose a model:", ["GEMINI", "MISTRAL", "LLAMA"])
@@ -57,9 +57,9 @@ def get_response(query, model_name):
     """Fetches response directly from the model"""
     try:
         response = analyze_query(query, model_name)  # Calls the function directly
-        return response if response else "⚠️ No response received"
+        return response if response else "No response received"
     except Exception as e:
-        return f"❌ Error: {str(e)}"
+        return f"Error: {str(e)}"
 
 # User Input
 user_query = st.text_area("Am I Alright?:", key="query")
