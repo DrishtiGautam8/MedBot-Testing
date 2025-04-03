@@ -2,13 +2,9 @@ import streamlit as st
 import json
 import sys
 import importlib
-if "analysis_engine" in sys.modules:
-    importlib.reload(sys.modules["analysis_engine"])
-
-import os
-
-# Upgrade SQLite before importing chromadb
-os.system("apt-get update && apt-get install -y sqlite3")
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 from analysis_engine import analyze_query  # Import your main function
 
 # from analysis_engine import analyze_query  # Importing the model function directly
