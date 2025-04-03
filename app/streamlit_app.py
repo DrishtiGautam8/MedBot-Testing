@@ -6,7 +6,12 @@ if "analysis_engine" in sys.modules:
     importlib.reload(sys.modules["analysis_engine"])
 
 import os
-os.system("pip uninstall pysqlite3-binary -y && pip install pysqlite3-binary")
+
+# Upgrade SQLite before importing chromadb
+os.system("sudo apt-get update && sudo apt-get install sqlite3")
+
+import streamlit as st
+from app.analysis_engine import analyze_query  # Import your main function
 
 from analysis_engine import analyze_query  # Importing the model function directly
 
