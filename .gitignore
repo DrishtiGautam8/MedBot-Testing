@@ -5,5 +5,5 @@ __pycache__/
 
 # Ignore API keys and secret files
 .env
-config.env
+
 client_secret.json
