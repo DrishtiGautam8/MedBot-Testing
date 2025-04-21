@@ -30,6 +30,8 @@ creds = Credentials.from_service_account_info(
 QUERIES_SHEET_URL = st.secrets["google"]["QUERIES_SHEET_URL"]
 FEEDBACK_SHEET_URL = st.secrets["google"]["FEEDBACK_SHEET_URL"]
 
+# Initialize gspread client
+gc = gspread.authorize(creds)
 
 # Load data
 @st.cache_data
