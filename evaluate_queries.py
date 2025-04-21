@@ -64,7 +64,7 @@ def get_unrated_queries(queries_df, feedback_df):
     return display_df
 
 # Save feedback
-  def update_feedback(new_feedback):
+def update_feedback(new_feedback):
     feedback_sheet = gc.open_by_url(FEEDBACK_SHEET_URL)
     feedback_worksheet = feedback_sheet.get_worksheet(0)
 
