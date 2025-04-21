@@ -27,8 +27,8 @@ creds = Credentials.from_service_account_info(
 
 
 # Google Sheets URLs
-QUERIES_SHEET_URL = st.secrets["QUERIES_SHEET_URL"]
-FEEDBACK_SHEET_URL = st.secrets["FEEDBACK_SHEET_URL"]
+QUERIES_SHEET_URL = st.secrets["google"]["QUERIES_SHEET_URL"]
+FEEDBACK_SHEET_URL = st.secrets["google"]["FEEDBACK_SHEET_URL"]
 
 
 # Load data
