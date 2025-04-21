@@ -9,7 +9,7 @@ from email import encoders
 from pathlib import Path
 import gspread
 from google.oauth2.service_account import Credentials
-
+import json
 
 # Constants
 QUERIES_PATH = "response_times_detailed_with_query_no.xlsx"
@@ -18,11 +18,13 @@ USER_LIMIT = 5
 EMAIL_RECEIVER = "drishtig0001@gmail.com"
 
 # Google Sheets setup
-SCOPES = ["https://www.googleapis.com/auth/spreadsheets"]
-SERVICE_ACCOUNT_FILE = "credentials.json"  # Replace with path to your credentials file
+SCOPES = ['https://www.googleapis.com/auth/spreadsheets', 'https://www.googleapis.com/auth/drive']
 
-creds = Credentials.from_service_account_file(SERVICE_ACCOUNT_FILE, scopes=SCOPES)
-gc = gspread.authorize(creds)
+creds = Credentials.from_service_account_info(
+    st.secrets["gcp_service_account"],
+    scopes=SCOPES
+)
+
 
 # Google Sheets URLs
 QUERIES_SHEET_URL = "https://docs.google.com/spreadsheets/d/1-gksEs15tssUz0hD38xgz1F-xOiMxzaI"
