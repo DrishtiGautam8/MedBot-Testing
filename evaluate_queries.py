@@ -27,8 +27,8 @@ creds = Credentials.from_service_account_info(
 
 
 # Google Sheets URLs
-QUERIES_SHEET_URL = "https://docs.google.com/spreadsheets/d/1-gksEs15tssUz0hD38xgz1F-xOiMxzaI"
-FEEDBACK_SHEET_URL = "https://docs.google.com/spreadsheets/d/1nfH5otANBbsgmUAvBGkJufJ9uh7hs56P"
+QUERIES_SHEET_URL = st.secrets["QUERIES_SHEET_URL"]
+FEEDBACK_SHEET_URL = st.secrets["FEEDBACK_SHEET_URL"]
 
 
 # Load data
@@ -37,8 +37,8 @@ def load_data():
     queries_sheet = gc.open_by_url(QUERIES_SHEET_URL)
     feedback_sheet = gc.open_by_url(FEEDBACK_SHEET_URL)
 
-    queries_worksheet = queries_sheet.get_worksheet(0)
-    feedback_worksheet = feedback_sheet.get_worksheet(0)
+    queries_df = pd.DataFrame(queries_sheet.sheet1.get_all_records())
+    feedback_df = pd.DataFrame(feedback_sheet.sheet1.get_all_records())
 
     queries_df = pd.DataFrame(queries_worksheet.get_all_records())
 
@@ -52,8 +52,6 @@ def load_data():
             "selected_best_model"])
 
     return queries_df, feedback_df
-
-
 
 
 # Get unrated grouped queries
