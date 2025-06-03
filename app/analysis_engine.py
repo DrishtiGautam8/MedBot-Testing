@@ -4,6 +4,7 @@ import chromadb
 from groq import Groq
 from google.generativeai import GenerativeModel
 from dotenv import load_dotenv
+import streamlit as st
 from sentence_transformers import SentenceTransformer  #  Load embedding model
 
 # Load environment variables
