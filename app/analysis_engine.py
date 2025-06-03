@@ -10,8 +10,8 @@ from sentence_transformers import SentenceTransformer  #  Load embedding model
 load_dotenv()
 
 # API Keys
-GROQ_API_KEY = os.getenv("Groq_API_KEY")
-GEMINI_API_KEY = os.getenv("GOOGLE_API_KEY")
+GROQ_API_KEY = st.secrets.get("Groq_API_KEY")
+GEMINI_API_KEY = st.secrets.get("GOOGLE_API_KEY")
 
 # Available models
 AVAILABLE_MODELS = {
